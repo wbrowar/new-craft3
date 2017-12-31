@@ -30,10 +30,7 @@ Here's a list of required tools used to run **New Craft 3**. Each tool should be
 ## Installation
 **New Craft 3** is a Node module that should be installed globally and it downloads the rest of its dependencies via `npm` and `composer`. This means that Craft 3, WB-Starter, Craft Scripts and other dependencies will be up to date every time **New Craft 3** is run.
 
-To set up **New Craft 3**, follow these steps:
-
-1. Download **New Craft 3** via `git clone https://github.com/wbrowar/new-craft3.git` or download the [ZIP file on GitHub](https://github.com/wbrowar/new-craft3).
-2. `cd` into the **New Craft 3** folder and run `npm -g install`.
+To set up **New Craft 3**, run either `yarn global add new-craft3` or `npm install -g new-craft3`.
 
 ## Usage
 Follow these steps to generate a new Craft 3 website:
