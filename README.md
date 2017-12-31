@@ -50,6 +50,8 @@ Follow these steps to generate a new Craft 3 website:
     - The database questions will have answers pulled from `.env.php`, so most answers can be bypassed by hitting `return` (the first question about database drivers shoudl be answered with "mysql").
     - You can choose to skip creating a `.env` file since Craft will use the `env.php` file instead. Read more about how to use this in [Craft3-Multi-Environment's documentation](https://github.com/nystudio107/craft3-multi-environment#using-craft-multi-environment).
     - Install Craft 3 via command line
+    
+By default and when possible, command line output is suppressed, however, you can see all command output and confirmation logs by adding the `--verbose` option. This could be useful for debugging.
 
 ## Options
 Arguments that are avaiable when running `new-craft3`:
@@ -57,7 +59,4 @@ Arguments that are avaiable when running `new-craft3`:
 | Argument | Default | Description |
 | --- | --- | --- |
 | `--template` | _craft3_1 | Select template to use in WB Starter setup. |
-| `--verbose` | *false* | Displays command confirmations and extra output where possible. |
-| `` |  |  |
-| `` |  |  |
-| `` |  |  |
+| `--verbose` | *false* | Displays command confirmations and extra command line output. |
