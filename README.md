@@ -45,8 +45,8 @@ Follow these steps to generate a new Craft 3 website:
     - `CHOWN User` and `CHOWN Group` are asking you for your machine's user and group so it can set proper file permissions in the config file for Craft Scripts. These can be bypassed by hitting `return` and you can manually add these to your `./scripts/env.sh` file after the install is complete.
   - **Craft 3**
     - Craft's command line installer will ask you to set up Craft's database and to run the default Craft 3 setup.
-    - The database questions will have answers pulled from `.env.php`, so most answers can be bypassed by hitting `return` (the first question about database drivers shoudl be answered with "mysql").
-    - You can choose to skip creating a `.env` file since Craft will use the `env.php` file instead. Read more about how to use this in [Craft3-Multi-Environment's documentation](https://github.com/nystudio107/craft3-multi-environment#using-craft-multi-environment).
+    - The database questions will have answers pulled from `.env.php`, so most answers can be bypassed by hitting `return` (the first question about database drivers should be answered with "mysql").
+    - You can choose to skip creating a `.env` file since Craft will use the `.env.php` file instead. Read more about how to use this in [Craft3-Multi-Environment's documentation](https://github.com/nystudio107/craft3-multi-environment#using-craft-multi-environment).
     - Install Craft 3 via command line
     
 By default and when possible, command line output is suppressed, however, you can see all command output and confirmation logs by adding the `--verbose` option. This could be useful for debugging.
