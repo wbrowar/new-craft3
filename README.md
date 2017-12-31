@@ -7,6 +7,7 @@ This Node module will do the following:
 - Create a MySql (or MariaDB) database for your site
 - Install [Craft CMS 3](https://github.com/craftcms/craft)
 - Install [Craft Scripts](https://github.com/nystudio107/craft-scripts)
+- Creates a default Craft 3 module
 - Set up a `.env.php` file, as per [Craft3-Multi-Environment](https://github.com/nystudio107/craft3-multi-environment)
 - Create a GitHub repo and perform an initial commit
 
