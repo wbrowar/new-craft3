@@ -33,6 +33,22 @@ Here's a list of required tools used to run **New Craft 3**. Each tool should be
 
 To set up **New Craft 3**, run either `yarn global add new-craft3` or `npm install -g new-craft3`.
 
+### Local Config
+If you have some default values that you prefer to use for every website, you may create a local config file that will provide defaults to the questions asked in the beginning.
+
+To create a local config file, copy `example.new-craft3.config.json` to your home folder and rename it `.new-craft3.config.json`.
+
+In this file add or edit the following options:
+
+| Option | Default | Description |
+| --- | --- | --- |
+| `cpTrigger` | "admin" | This replaces the path to Craft’s CP. |
+| `dbPrefix` | "craft" | Set a database prefix for if a database will include tables outside of the Craft install. |
+| `gitUser` | "" | Your GitHub username. |
+| `gitOrg` | "" | A GitHub organization name, if you plan to create sites for an organization. |
+
+Remove any options you don’t want to create a preset for. You will still be able to overwrite any of these presets when setting up a new project.
+
 ## Usage
 Follow these steps to generate a new Craft 3 website:
 
@@ -42,7 +58,6 @@ Follow these steps to generate a new Craft 3 website:
   - **New Craft 3**
     - Asks you to name the project by providing a client code (their initials) and a machine-readable name. This creates the project folder, names the database, and names the GitHub repo. For example, providing "wb" as the client and "test" as the project name, my project folder would be created as `wb-test`.
     - Allows you to change the CP Trigger in Craft CMS. For example, changing this to "administrator" would mean to get to Craft's Control Panel you would visit `http://wb-test.test/administrator`
-    - `CHOWN User` and `CHOWN Group` are asking you for your machine's user and group so it can set proper file permissions in the config file for Craft Scripts. These can be bypassed by hitting `return` and you can manually add these to your `./scripts/env.sh` file after the install is complete.
   - **Craft 3**
     - Craft's command line installer will ask you to set up Craft's database and to run the default Craft 3 setup.
     - The database questions will have answers pulled from `.env.php`, so most answers can be bypassed by hitting `return` (the first question about database drivers should be answered with "mysql").
@@ -58,3 +73,10 @@ Arguments that are avaiable when running `new-craft3`:
 | --- | --- | --- |
 | `--template` | _craft3_1 | Select template to use in WB Starter setup. |
 | `--verbose` | *false* | Displays command confirmations and extra command line output. |
+
+## Contributing
+To test locally, remove any existing versions of `new-craft3`, clone this repo, and run this command:
+
+```
+npm uninstall -g new-craft3 && npm install -g PATH_TO_LOCAL
+```

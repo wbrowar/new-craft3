@@ -1,6 +1,6 @@
 {
   "name": "new-craft3",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Create a new Craft 3 project and run basic installation cammands.",
   "main": "./lib/index.js",
   "bin": {
