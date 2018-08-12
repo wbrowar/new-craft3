@@ -7,7 +7,6 @@ This Node module will do the following:
 - Create a MySql (or MariaDB) database for your site
 - Install [Craft CMS 3](https://github.com/craftcms/craft)
 - Install [Craft Scripts](https://github.com/nystudio107/craft-scripts)
-- Creates a default Craft 3 module
 - Set up a `.env.php` file, as per [Craft3-Multi-Environment](https://github.com/nystudio107/craft3-multi-environment)
 - Create a GitHub repo and perform an initial commit
 
@@ -25,13 +24,12 @@ Here's a list of required tools used to run **New Craft 3**. Each tool should be
 - [ImageMagick](https://www.imagemagick.org): `brew install imagemagick`
 - [Node.js](https://nodejs.org/en/)
 - [SASS](http://sass-lang.com/): `gem install sass`
-- [Yarn](https://yarnpkg.com): `npm install -g yarn`
 
 
 ## Installation
 **New Craft 3** is a Node module that should be installed globally and it downloads the rest of its dependencies via `npm` and `composer`. This means that Craft 3, WB-Starter, Craft Scripts and other dependencies will be up to date every time **New Craft 3** is run.
 
-To set up **New Craft 3**, run either `yarn global add new-craft3` or `npm install -g new-craft3`.
+To set up **New Craft 3**, run `npm install -g new-craft3`.
 
 ### Local Config
 If you have some default values that you prefer to use for every website, you may create a local config file that will provide defaults to the questions asked in the beginning.
@@ -54,7 +52,7 @@ Follow these steps to generate a new Craft 3 website:
 
 1. `cd` into your parked Valet directory
 2. Run `new-craft3`
-3. Enter in the required information reqested by various sets of prompts. Questions are asked by different installation tools—and may change over time, but here are the basics:
+3. Enter in the required information requested by various sets of prompts. Questions are asked by different installation tools—and may change over time, but here are the basics:
   - **New Craft 3**
     - Asks you to name the project by providing a client code (their initials) and a machine-readable name. This creates the project folder, names the database, and names the GitHub repo. For example, providing "wb" as the client and "test" as the project name, my project folder would be created as `wb-test`.
     - Allows you to change the CP Trigger in Craft CMS. For example, changing this to "administrator" would mean to get to Craft's Control Panel you would visit `http://wb-test.test/administrator`
@@ -67,7 +65,7 @@ Follow these steps to generate a new Craft 3 website:
 By default and when possible, command line output is suppressed, however, you can see all command output and confirmation logs by adding the `--verbose` option. This could be useful for debugging.
 
 ## Options
-Arguments that are avaiable when running `new-craft3`:
+Arguments that are available when running `new-craft3`:
 
 | Argument | Default | Description |
 | --- | --- | --- |
