@@ -1,6 +1,10 @@
 {
   "cpTrigger": "admin",
+  "dbHost": "",
+  "dbPass": "",
+  "dbPort": "",
   "dbPrefix": "craft",
+  "dbUser": "root",
   "gitUser": "",
   "gitOrg": ""
 }
